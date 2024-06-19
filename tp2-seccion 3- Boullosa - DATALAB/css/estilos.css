@@ -1,0 +1,104 @@
+* {
+
+  
+  
+    box-sizing: border-box;
+}
+
+
+h1,body { margin: 0;}
+p{
+    margin: 10;
+}
+
+
+header {
+
+
+    width: 100%;
+    padding-top: 40px;
+    height: 25vh;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+header a {
+font-family: "Fantasy", Copperplate, Fantasy;
+background-color: white;
+color: rgb(0, 0, 0);
+border: 2px dashed white;
+text-decoration: none;
+text-transform: uppercase;
+display: block;
+width: 150px;
+height: 30px;
+margin: auto;
+line-height: 30px;
+transition: all 3s;
+
+}
+
+a:hover {
+background-color: rgb(0, 0, 200);
+border-color: white;
+color: white;
+
+
+}
+
+
+main {
+
+    width: 80%;
+    margin:auto;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+video { width: 60%;
+    display: block;
+    margin: 10px auto;
+}
+
+div {
+   
+    width: 30%;
+
+}
+
+img { width: 100%; }
+
+.div_completo{
+    width:100%
+}
+.corazon{
+    animation-name:latido ;
+    animation-duration: 1s;
+   animation-iteration-count:infinite;
+   position: center;
+   width: 10%;
+   height: 10%;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@keyframes latido {
+    0%, 20%, 50%, 80%, 100% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+}
